@@ -1,0 +1,9 @@
+.bg-image {
+  background-image: url("../images/banner_1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.54);
+  background-blend-mode: overlay;
+  height: 400px;
+}
