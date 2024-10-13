@@ -10,13 +10,6 @@ const loadAllMeals = async () => {
   seaFoodBtn.addEventListener("click", () => {
     displayAllMeals(allMeal);
     seaFoodBtn.classList.add("hidden");
-    const btnSeeLess = document.getElementById("btn-sea-less");
-    btnSeeLess.classList.remove("hidden");
-    btnSeeLess.addEventListener("click", () => {
-      btnSeeLess.classList.add("hidden");
-      seaFoodBtn.classList.remove("hidden");
-      displayAllMeals();
-    });
   });
 };
 
@@ -57,6 +50,7 @@ const loadAllCategoriesMeals = async () => {
   const btnCategory = document.getElementById("btn-category-all");
   btnCategory.addEventListener("click", () => {
     displayAllCategoriesMeals(allMeal);
+    btnCategory.classList.add("hidden");
   });
 };
 
