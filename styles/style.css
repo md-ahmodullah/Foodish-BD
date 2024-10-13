@@ -7,3 +7,7 @@
   background-blend-mode: overlay;
   height: 400px;
 }
+
+.footer-bg {
+  background: rgba(255, 193, 7, 0.05);
+}
