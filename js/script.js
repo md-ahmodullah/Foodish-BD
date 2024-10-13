@@ -52,7 +52,12 @@ const loadAllCategoriesMeals = async () => {
     "https://www.themealdb.com/api/json/v1/1/categories.php"
   );
   const allMeals = await res.json();
-  displayAllCategoriesMeals(allMeals.categories);
+  const allMeal = allMeals.categories;
+  displayAllCategoriesMeals(allMeal.slice(0, 6));
+  const btnCategory = document.getElementById("btn-category-all");
+  btnCategory.addEventListener("click", () => {
+    displayAllCategoriesMeals(allMeal);
+  });
 };
 
 // display all categories meals
